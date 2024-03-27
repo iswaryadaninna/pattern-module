@@ -1,0 +1,86 @@
+def square_pattern(n):
+    for i in range(n):
+        for j in range(n):
+            print("*",end=" ")
+        print()
+
+
+def right_triangle_pattern(n):
+    for i in range(n):
+        for j in range(i+1):
+            print("*",end=" ")
+        print()
+
+
+def left_triangle_pattern(n):
+    for i in range(1,n):
+        for j in range(i,n):
+            print(" ",end=" ")
+        for j in range(i):
+            print("*",end=" ")       
+        print()
+
+
+
+def hill_pattern(n):
+    for i in range(n):
+        for j in range(i,n):
+            print(" ",end=" ")
+        for j in range(i):
+            print("*",end=" ")       
+        for j in range(i+1):
+            print("*",end=" ")
+        print()
+
+
+def reverse_hill_pattern(n):
+    for i in range(n):
+        for j in range(i+1):
+            print(" ",end=" ")
+        for j in range(i,n-1):
+            print("*",end=" ")       
+        for j in range(i,n):
+            print("*",end=" ")
+        print()
+
+
+
+def diamond_pattern(n):
+    for i in range(n-1):
+        for j in range(i,n):
+            print(" ",end=" ")
+        for j in range(i):
+            print("*",end=" ")       
+        for j in range(i+1):
+            print("*",end=" ")
+        print()    
+    for i in range(n):
+        for j in range(i+1):
+            print(" ",end=" ")
+        for j in range(i,n-1):
+            print("*",end=" ")       
+        for j in range(i,n):
+            print("*",end=" ")
+        print()
+
+#REMOVE COMMENTS IF YOU WANT TO EXCUTE CODE
+"""n=int(input())
+print("-----------------------------------------------------------------------------")
+print("\n Square Pattern : \n ......................................................................... ")
+square_pattern(n)
+print("--------------------------------------------------------------------------\n")
+print("\n Right Triangle Pattern \n .......................................................................... ")
+right_triangle_pattern(n)
+print("--------------------------------------------------------------------------\n")
+print("\n Left Triangle Pattern \n ..........................................................................  ")
+left_triangle_pattern(n)
+print("--------------------------------------------------------------------------\n")
+print("\n Hill Pattern \n ..........................................................................")
+hill_pattern(n)
+print("--------------------------------------------------------------------------\n")
+print("\n Reverse Hill Pattern \n ..........................................................................")
+reverse_hill_pattern(n)
+print("--------------------------------------------------------------------------")
+print("\n Diamond Pattern \n ..........................................................................")
+diamond_pattern(n)
+print("--------------------------------------------------------------------------\n")"""
